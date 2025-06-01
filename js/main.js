@@ -39,7 +39,7 @@ if (
         localStorage.getItem("connected") == 1
     )
 ) {
-    if (location.pathname != "/signup.html" && location.pathname != "/opt.html" && location.pathname != "/login.html") {
+    if (!location.pathname.includes("signup.html") && !location.pathname.includes("opt.html") && !location.pathname.includes("login.html")) {
         location = "login.html";
     }
 }
