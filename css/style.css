@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.pt-10{
+    padding-top: 4rem;
+}
+
 .circle{
     border-radius: 50%;
 }
