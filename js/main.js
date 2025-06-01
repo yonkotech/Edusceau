@@ -32,6 +32,8 @@ document.getElementById("connexion")?.addEventListener("submit", (e) => {
     localStorage.setItem("connected", "1");
     localStorage.setItem("user-id", document.querySelector("#email").value[0].toUpperCase());
 });
+console.log("lieu", location.pathname);
+console.log(!location.pathname.includes("signup.html") && !location.pathname.includes("opt.html") && !location.pathname.includes("login.html"));
 
 if (
     !(
@@ -39,6 +41,7 @@ if (
         localStorage.getItem("connected") == 1
     )
 ) {
+
     if (!location.pathname.includes("signup.html") && !location.pathname.includes("opt.html") && !location.pathname.includes("login.html")) {
         location = "login.html";
     }
