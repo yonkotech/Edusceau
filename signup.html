@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Inscription - Edusceau</title>
+  </head>
+   <body class="flex h-100 justify-content-center align-items-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+        <div
+          action=""
+          class="col-lg-8 col-md-10 col-sm-10 p-2 align-items-center justify-content-center bordure"
+        >
+          <div class="row p-2 align-items-center justify-content-end">
+            <div class="col-lg-10"><h2 class="text-center">Inscription</h2></div>
+            
+            <div class="theme-switch col-lg-2 flex p-0 "><div class="ball"></div></div>
+          </div>
+
+          <form action="" class="center" id="inscription">
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12"> Nom : </label>
+              <input
+                type="text"
+                placeholder="nom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12"
+                >Postnom :
+              </label>
+              <input
+                type="text"
+                placeholder="postnom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Prenom :
+              </label>
+
+              <input
+                type="text"
+                placeholder="prenom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                email :
+              </label>
+
+              <input
+                type="email"
+                placeholder="adresse mail"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Date de naissance :
+              </label>
+              <input
+                type="date"
+                placeholder="date d'anniversaire"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Mot de passe :
+              </label>
+              <input
+                type="password"
+                placeholder="nouveau mot de passe"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Confirmation :
+              </label>
+              <input
+                type="password"
+                placeholder="confirmation de mot de passe"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Type de compte :
+              </label>
+              <select name="" id="" class="col-lg-8 col-md-8 col-sm-12" required>
+                <option value="" disabled selected class="text-center">
+                  -- Selectionner le type de compte --
+                </option>
+                <option value="">Eleve</option>
+                <option value="">Parent</option>
+                <option value="">Enseignant</option>
+                <option value="">Directeur/prefet</option>
+              </select>
+            </div>
+            <div class="row text-center"><p class="col p-2">Deja un compte? <a href="login.html">Se connecter</a></p></div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 button align-items-center flex p-2">
+                <button type="reset" class="btn btn-info">Effacer</button> <button type="submit" class="btn btn-success" id="inscription">
+                  Valider
+                </button>
+              </div>
+
+              <div class="col-3"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

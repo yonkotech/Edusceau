@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Accueil - Edusceau</title>
+</head>
+<body data-bs-theme="light">
+    <script>
+        if(localStorage.getItem("connected") ?? localStorage.getItem("connected") == 1){
+            location = "dashboard.html";
+        }else{
+            location = "login.html";
+        }
+    </script>
+</body>
+</html>

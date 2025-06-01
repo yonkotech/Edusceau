@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Verification compte - Edusceau</title>
+  </head>
+  <body class="flex h-100 justify-content-center align-items-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+        <div
+          action=""
+          class="col-lg-8 col-md-10 col-sm-10 p-2 align-items-center justify-content-center bordure"
+        >
+          <div class="row p-2 align-items-center justify-content-end">
+            <div class="col-lg-10"><h2 class="text-center">Verification de l'adresse mail</h2></div>
+            
+            <div class="theme-switch col-lg-2 flex p-0 "><div class="ball"></div></div>
+          </div>
+
+          <form action="" class="center" id="verify-mail">
+              <div class="row text-center"><p class="col p-2">Nous avons envoye le code de confirmation. <a href="login.html">Se connecter</a></p></div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Code :
+              </label>
+              <input
+                type="number"
+                placeholder="code de verification"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                id="code"
+                required
+              />
+            </div>
+           
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 button align-items-center flex p-2">
+                <button type="submit" class="btn btn-success">
+                  Verifier
+                </button>
+              </div>
+
+              <div class="col-3"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

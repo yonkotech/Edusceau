@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Parametres de compte - Edusceau</title>
+  </head>
+  <body class="container-fluid" data-bs-theme="dark">
+    <header class="row p-3 align-items-center justify-content-center ">
+      <h1 class="col-lg-1 col-md-12 col-sm-12 text-center p-4">Edusceau</h1>
+      <div class="col-lg-2"></div>
+      <nav class="col-lg-9 col-md-12 col-sm-12">
+        <div class="row">
+          <h2 class="text-center col-lg-3 col-md-3 btn btn-link bold align-items-center flex"><a href="dashboard.html">Accueil</a></h2>
+          <h2 class="text-center col-lg-3 col-md-3 btn btn-link bold align-items-center flex "><a href="verify.html">Verification bulletin</a></h2>
+          <h2 class="text-center col-lg-3 col-md-3 btn btn-link bold  align-items-center flex"><a href="about.html">A propos</a></h2>
+          <h2 class="text-end flex col-lg-3  col-md -3btn-link bold align-item-center justify-content-center"><div class="theme-switch me-2 mt-1 flex"><div class="ball"></div></div> <a href="settings.html"><div class="user-icon me-2" ><a href="settings.html" id="user-id">~</a></div></a> </h2>
+</a></div></a> </h2>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4 mb-4">
+       <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+        <div
+          action=""
+          class="col-lg-8 col-md-10 col-sm-10 p-2 align-items-center justify-content-center bordure"
+        >
+          <div class="row">
+            <div class="col-12"><h2 class="text-center">Parametres du compte</h2></div>
+          </div>
+
+          <form action="" class="center" id="inscription">
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12"> Nom : </label>
+              <input
+                type="text"
+                placeholder="nom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12"
+                >Postnom :
+              </label>
+              <input
+                type="text"
+                placeholder="postnom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Prenom :
+              </label>
+
+              <input
+                type="text"
+                placeholder="prenom"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+           
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Date de naissance :
+              </label>
+              <input
+                type="date"
+                placeholder="date d'anniversaire"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Mot de passe :
+              </label>
+              <input
+                type="password"
+                placeholder="nouveau mot de passe"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                Confirmation :
+              </label>
+              <input
+                type="password"
+                placeholder="confirmation de mot de passe"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                required
+              />
+            </div>
+            
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 button align-items-center flex p-2">
+                <button type="reset" class="btn btn-warning" id="delete-req">Supprimer le compte</button> <button type="submit" class="btn btn-success" id="inscription">
+                  Modifier
+                </button>
+              </div>
+
+              <div class="col-3"></div>
+            </div>
+          </form>
+
+          <form action="" class="center message" id="delete">
+              <div class="row text-center"><p class="col p-2">Vous nous quittez deja ?</p></div>
+            <div class="row m-2">
+              <label for="" class="col-lg-4 col-md-4 col-sm-12">
+                supprimer le compte :
+              </label>
+              <input
+                type="password"
+                placeholder="mot de passe"
+                class="input col-lg-8 col-md-8 col-sm-12"
+                id="code"
+                required
+              />
+            </div>
+           
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 button align-items-center flex p-2">
+                <button type="submit" class="btn btn-danger">
+                  Supprimer
+                </button>
+              </div>
+
+              <div class="col-3"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-2 col-md-1 col-sm-1"></div>
+      </div>
+    </div>
+    </main>
+
+     <footer class="container-fluid mt-5">
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6 col-sm-6 p-4">
+                <div class="row"><h3 class="col-12"> Nos contactes<h3/></div>
+                    <div class="row"><a href="mailto:example@gmail.com"> Nous ecrire</a></div>
+                    <div class="row"><a href="https://www.facebook.com" target="_blank"> Facebook</a></div>
+                    <div class="row"><a href="https://web.whatsapp.com" target="_blank"> Whatsapp</a></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-4">
+                <div class="row"><h3>En savoir plus<h3/></div>
+                <div class="row"><a href="about.html" > Qui sommes-nous ?</a></div>
+                <div class="row"><a href="team.html" > Notre equipe</a></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-4">
+                <div class="row"><h3 class="col-12"> Mon compte<h3/></div>
+                    <div class="row"><a href="settings.html" > Parametres du compte</a></div>
+                    <div class="row"><a href="" id="disconnect" > Deconnexion</a></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-4">
+                <div class="row"><h3 class="col-12">Politique de confientialite<h3/></div>
+                    <div class="row"><a href="conditions.html" >Conditions d'utilisation</a></div>
+                    <div class="row"><a href="politics.html" >Politique d'utilisation</a></div>
+            </div>
+
+           
+        </div>
+    </footer>
+
+   <script src="js/main.js"></script>
+  </body>
+</html>
