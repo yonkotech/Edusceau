@@ -18,10 +18,26 @@ document.querySelector(".theme-switch").addEventListener("click", () => {
     localStorage.setItem("theme", document.querySelector("body").getAttribute("data-bs-theme") ?? "light");
 })
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 document.getElementById("verify")?.addEventListener("submit", (e) => {
     e.preventDefault();
+    const correct = getRandomInt(0, 13) % 2 == 0;
+    
+
+    document.querySelectorAll(".negative").forEach(e=>{
+        if(correct){
+            e.classList.add("active");
+        }else{
+            e.classList.remove("active");
+        }
+    })
+
     document.querySelector(".message").classList.add("visible");
 
 });

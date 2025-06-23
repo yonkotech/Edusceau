@@ -1,6 +1,12 @@
 @import url("bootstrap.min.css");
 
+.negative{
+    display: none;
+}
 
+.negative.active{
+    display: inline;
+}
 
 .flex{
     display: flex;
