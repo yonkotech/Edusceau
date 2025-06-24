@@ -4,6 +4,10 @@
     display: none;
 }
 
+.btn.selected{
+    color: black;
+}
+
 .negative.active{
     display: inline;
 }
