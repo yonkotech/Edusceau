@@ -4,8 +4,8 @@
     display: none;
 }
 
-.btn.selected{
-    color: black;
+body[data-bs-theme="dark"] h2.btn.selected a{
+    color: var(--bs-body-bg);
 }
 
 .negative.active{
